@@ -99,9 +99,9 @@ import {
         return (
             <View style = {styles.container}>
               { console.disableYellowBox = true }
-                <StatusBar backgroundColor = "#00bfff" barStyle = "light-content"/>
+                <StatusBar backgroundColor = "#009387" barStyle = "light-content"/>
              <View style = {styles.header}>
-               <Text style = {styles.text_header}>Register Here For an Event!!</Text>
+               <Text style = {styles.text_header}>Register Here For an Event</Text>
              </View>
              <View 
              
@@ -260,7 +260,7 @@ import {
 const styles = StyleSheet.create({
     container:{
         flex : 1,
-        backgroundColor: '#00bfff'
+        backgroundColor: '#009387'
     }, 
     header : {
         flex: 0.5,
@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
         borderRadius:50,
       },
       loginButton: {
-        backgroundColor: '#00bfff',
+        backgroundColor: '#009387',
       },
     textSign1 : {
         color : 'white',
@@ -344,7 +344,7 @@ const styles = StyleSheet.create({
   text: {
       fontSize: 20,
       alignSelf: 'center',
-      color : '#00bfff',
+      color : '#009387',
       paddingLeft : 10,
    }
 });

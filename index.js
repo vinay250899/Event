@@ -14,5 +14,6 @@ import Log_out from './Log_out';
 import mod_usr from './mod_usr';
 import user_home from './user_home';
 import add_part_usr from './add_part_usr';
+import view_part_usr from './view_part_usr';
 
 AppRegistry.registerComponent(appName, () => navigation);

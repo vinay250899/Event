@@ -4,9 +4,11 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
 
+import create_usr from './create_usr';
 import add_part_usr from './add_part_usr';
 import Log_out from './Log_out';
 import mod_usr from './mod_usr';
+import view_part_usr from './view_part_usr';
 
 class NavigationDrawerStructure extends Component {
 
@@ -33,7 +35,7 @@ class NavigationDrawerStructure extends Component {
   const StackNav1 = createStackNavigator({
    
  
-    add_part_usr:  add_part_usr,
+    view_part_usr:  view_part_usr,
 
     mod_usr : mod_usr,
  
@@ -41,10 +43,10 @@ class NavigationDrawerStructure extends Component {
   const FirstActivity_StackNavigator = createStackNavigator({
   
     First: {
-      screen: create_usr,
+      screen: add_part_usr,
      
       navigationOptions: ({ navigation }) => ({
-        title: 'Create User',
+        title: 'Add Participant',
         headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
         headerStyle: {
           backgroundColor: "#009387",
@@ -60,7 +62,7 @@ class NavigationDrawerStructure extends Component {
         screen: StackNav1,
      
       navigationOptions: ({ navigation }) => ({
-        title: 'All Users',
+        title: 'Participants List',
         headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
         headerStyle: {
           backgroundColor: "#009387",
@@ -101,7 +103,7 @@ class NavigationDrawerStructure extends Component {
       
       screen: FirstActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: 'Create User',
+        drawerLabel: 'Add Participant',
         
       },
     },
@@ -110,7 +112,7 @@ class NavigationDrawerStructure extends Component {
       screen: Screen2_StackNavigator,
       
       navigationOptions: {
-        drawerLabel: 'All Users',
+        drawerLabel: 'View Participants',
       },
     },
     Screen3: {
