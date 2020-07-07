@@ -97,7 +97,7 @@ export default class App extends React.Component {
       .auth()
       .signInWithEmailAndPassword(email, password)
       
-      .then(() =>  this.props.navigation.navigate(this.state.sc ? 'user_home' : 'adm_home'))
+      .then(() =>  this.props.navigation.navigate(this.state.sc ? 'user_home' : 'user_home'))
       .catch(error => this.setState({ errorMessage: error.message }))
 
 
